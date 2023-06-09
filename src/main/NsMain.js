@@ -1,7 +1,7 @@
 import React from 'react'
 import './scss/NsMain.scss'
-import banner from './img/banner.png'
-import ex from './img/ex.jpg'
+import wt from './img/wt.png'
+
 import NsItem from './NsItem'
 import NsBanner from './NsBanner'
 import { Route, Routes } from 'react-router-dom'
@@ -61,13 +61,17 @@ const MainContent = ({ isRouteActive }) => {
             <div className='mainbox'>
             <div className='contentbox'>
             <NsItem />
-            <NsItem />
+            {/* <NsFishing */}
+            
             <NsItem />
 
 
             </div>
         <div className='apibox'>
             <div className='exbox'>이번주 날씨 > </div>
+            <div className='wtbox'>
+                <img src={wt} />
+            </div>
         </div>
        </div>
             </>

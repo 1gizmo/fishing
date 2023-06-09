@@ -1,0 +1,36 @@
+.rvChoice {
+
+
+    border-bottom: 1px solid #DDDDDD;
+
+    height: 100px;
+
+    .rvbox {
+
+        display: flex;
+        text-align: left;
+        font-weight: 700;
+
+
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 70px;
+
+        select {
+            width: 200px;
+        }
+    }
+
+    button {
+        float: left;
+        width: 80px;
+        margin-top: 10px;
+        margin-left: 80px;
+        color: #fff;
+        font-weight: 700;
+        background: #123282;
+        border: none;
+        border-radius: 10px;
+    }
+
+}
