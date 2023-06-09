@@ -1,7 +1,8 @@
 import React from 'react'
 import './scss/NsFishingSpot.scss'
 import ex1 from './img/bg.jpg'
-const NsClass = () => {
+
+const NsFishingSpot = () => {
   return (
     <div className='fishingSpot'>
     <div className='title'>
@@ -17,4 +18,4 @@ const NsClass = () => {
   )
 }
 
-export default NsClass
+export default NsFishingSpot

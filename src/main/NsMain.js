@@ -6,6 +6,9 @@ import NsItem from './NsItem'
 import NsBanner from './NsBanner'
 import { Route, Routes } from 'react-router-dom'
 import RvTemplate from './reservation/RvTemplate'
+import NsFishingSpot from './NsFishingSpot'
+import NsClass from './NsClass'
+import RvBtDetail from './reservation/RvBtDetail'
 
 
 
@@ -19,6 +22,7 @@ const NsMain = () => {
         <Routes>
             <Route path='/bt' element={<RvTemplate/>} ></Route>
             <Route path='/' element ={<MainContent />} />
+            <Route path='/detail' element={<RvBtDetail/>}></Route>
         </Routes>
         {/* <div className='banner'><img src={banner} /></div> */}
         {/* <NsBanner />
@@ -61,9 +65,8 @@ const MainContent = ({ isRouteActive }) => {
             <div className='mainbox'>
             <div className='contentbox'>
             <NsItem />
-            {/* <NsFishing */}
-            
-            <NsItem />
+            <NsFishingSpot />
+            <NsClass />
 
 
             </div>
