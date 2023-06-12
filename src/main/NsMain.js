@@ -9,8 +9,8 @@ import RvTemplate from './reservation/RvTemplate'
 import NsFishingSpot from './NsFishingSpot'
 import NsClass from './NsClass'
 import RvBtDetail from './reservation/RvBtDetail'
-
-
+import MpMain from './mypage/MpMain'
+import Myinfo from './mypage/Myinfo'
 
 
 const NsMain = () => {
@@ -22,7 +22,9 @@ const NsMain = () => {
         <Routes>
             <Route path='/bt' element={<RvTemplate/>} ></Route>
             <Route path='/' element ={<MainContent />} />
-            <Route path='/detail' element={<RvBtDetail/>}></Route>
+            <Route path='/detail' element={<RvBtDetail/>}> </Route>
+            <Route path='/my' element={<MpMain/>}> </Route>
+            <Route path='/myinfo' element={<Myinfo/>}></Route>
         </Routes>
         {/* <div className='banner'><img src={banner} /></div> */}
         {/* <NsBanner />

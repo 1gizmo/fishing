@@ -1,0 +1,49 @@
+import React from 'react'
+import './MpScss/MpMain.scss'
+import { Link } from 'react-router-dom'
+
+const MpMain = () => {
+  return (
+        <section className='MyPageMainBox'>
+            <div className='mainbox1'>
+
+                        <h1>마이페이지</h1>
+                    <div className='userinfobox'>
+                        <div className='profilebox'>
+                            <img />
+                        </div>
+                        <div className='namebox'>
+                            <div className='nickName'>LOVETMORROW</div>
+                            <div>업체정보를 입력하세요</div>
+                        </div>
+                        <div className='btbox'>
+                        <button className='isbtn'>글 등록하기</button>
+                        <button>개인 정보 수정</button>
+                        </div>
+                    </div>
+
+
+                <div className='rvbox'>
+                        <h2>리뷰 게시판</h2>
+                        <p>아직 작성된 리뷰가 없습니다</p>
+                </div>
+
+                <div className='rvbox2'>
+                    <h2>예약 현황</h2>
+                    <p>아직 작성된 글이 없습니다</p>
+                </div>
+            </div>
+            <ul className='list'>
+                <li>업체정보</li>
+                <li>리뷰게시판</li>
+                <li>예약현황</li>
+                <li className='my'>내정보</li>
+                <li><Link to={'/myinfo'}>정보 수정하기</Link></li>
+                <li>내 예약 내역</li>
+                <li>문의현황</li>
+            </ul>
+        </section>
+    )
+}
+
+export default MpMain
