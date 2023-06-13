@@ -1,6 +1,8 @@
 import React from 'react'
 import './MpScss/Myinfo.scss'
 import DaumPostcode from 'react-daum-postcode';
+import { Link } from 'react-router-dom';
+import Mypassword from './Mypassword';
 
 const Myinfo = () => {
     const handleAddressSearch = () => {
@@ -28,7 +30,7 @@ const Myinfo = () => {
             <div className='email'>
             <div className='title'>이메일</div>
                 <div className='em'>abc@abcd.com</div>
-                <button className='btn1'>비밀번호 변경</button> 
+                <button className='btn1'><Link to={'/mypassword'}>비밀번호 변경</Link></button> 
 
             </div>
             <div className='phoneNum'>
@@ -62,7 +64,7 @@ const Myinfo = () => {
         <li>리뷰게시판</li>
         <li>예약현황</li>
         <li className='my'>내정보</li>
-        <li>정보 수정하기</li>
+        <li><Link to={'/myinfo'}>정보 수정하기</Link></li>
         <li>내 예약 내역</li>
         <li>문의현황</li>
     </ul>

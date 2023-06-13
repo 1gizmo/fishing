@@ -18,7 +18,7 @@ const MpMain = () => {
                         </div>
                         <div className='btbox'>
                         <button className='isbtn'>글 등록하기</button>
-                        <button>개인 정보 수정</button>
+                        <button><Link to={'/myinfo'}>개인 정보 수정</Link></button>
                         </div>
                     </div>
 
@@ -36,11 +36,11 @@ const MpMain = () => {
             <ul className='list'>
                 <li>업체정보</li>
                 <li>리뷰게시판</li>
-                <li>예약현황</li>
-                <li className='my'>내정보</li>
+                <li className='my'>예약현황</li>
                 <li><Link to={'/myinfo'}>정보 수정하기</Link></li>
-                <li>내 예약 내역</li>
-                <li>문의현황</li>
+                <li><Link to={'/rvlist'}>내 예약 내역</Link></li>
+                <li><Link to={'/inquire'}>문의현황</Link></li>
+                <li><Link to={'/userDrop'}>회원탈퇴하기</Link></li>
             </ul>
         </section>
     )

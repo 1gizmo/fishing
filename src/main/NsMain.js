@@ -11,6 +11,11 @@ import NsClass from './NsClass'
 import RvBtDetail from './reservation/RvBtDetail'
 import MpMain from './mypage/MpMain'
 import Myinfo from './mypage/Myinfo'
+import Mypassword from './mypage/Mypassword'
+import MpUserDrop from './mypage/MpUserDrop'
+import MpDrop from './mypage/MpDrop'
+import MpInquire from './mypage/MpInquire'
+import MpRvlist from './mypage/MpRvlist'
 
 
 const NsMain = () => {
@@ -25,6 +30,11 @@ const NsMain = () => {
             <Route path='/detail' element={<RvBtDetail/>}> </Route>
             <Route path='/my' element={<MpMain/>}> </Route>
             <Route path='/myinfo' element={<Myinfo/>}></Route>
+            <Route path='/mypassword' element={<Mypassword/>}></Route>
+            <Route path='/userDrop' element={<MpUserDrop/>}></Route>
+            <Route path='/drop' element={<MpDrop/>}></Route>
+            <Route path='/inquire' element={<MpInquire/>}></Route>
+            <Route path='/rvlist' element={<MpRvlist/>}></Route>
         </Routes>
         {/* <div className='banner'><img src={banner} /></div> */}
         {/* <NsBanner />
