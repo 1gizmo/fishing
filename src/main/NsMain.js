@@ -16,6 +16,9 @@ import MpUserDrop from './mypage/MpUserDrop'
 import MpDrop from './mypage/MpDrop'
 import MpInquire from './mypage/MpInquire'
 import MpRvlist from './mypage/MpRvlist'
+import RvFsDetail from './fishingspot/RvFsDetail'
+import RvFsTemplate from './fishingspot/RvFsTemplate'
+import WeeklyWeather from './WeeklyWeather'
 
 
 const NsMain = () => {
@@ -28,6 +31,7 @@ const NsMain = () => {
             <Route path='/bt' element={<RvTemplate/>} ></Route>
             <Route path='/' element ={<MainContent />} />
             <Route path='/detail' element={<RvBtDetail/>}> </Route>
+            <Route path='/fsdetail' element={<RvFsDetail/>}> </Route>
             <Route path='/my' element={<MpMain/>}> </Route>
             <Route path='/myinfo' element={<Myinfo/>}></Route>
             <Route path='/mypassword' element={<Mypassword/>}></Route>
@@ -35,6 +39,7 @@ const NsMain = () => {
             <Route path='/drop' element={<MpDrop/>}></Route>
             <Route path='/inquire' element={<MpInquire/>}></Route>
             <Route path='/rvlist' element={<MpRvlist/>}></Route>
+            <Route path='/fs' element={<RvFsTemplate/>}></Route>
         </Routes>
         {/* <div className='banner'><img src={banner} /></div> */}
         {/* <NsBanner />
@@ -85,7 +90,8 @@ const MainContent = ({ isRouteActive }) => {
         <div className='apibox'>
             <div className='exbox'>이번주 날씨 > </div>
             <div className='wtbox'>
-                <img src={wt} />
+                {/* <img src={wt} /> */}
+                <WeeklyWeather/>
             </div>
         </div>
        </div>

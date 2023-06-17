@@ -1,6 +1,7 @@
 import React from 'react'
 import './MpScss/MpMain.scss'
 import { Link } from 'react-router-dom'
+import MpList from './MpList'
 
 const MpMain = () => {
   return (
@@ -33,7 +34,7 @@ const MpMain = () => {
                     <p>아직 작성된 글이 없습니다</p>
                 </div>
             </div>
-            <ul className='list'>
+            {/* <ul className='list'>
                 <li>업체정보</li>
                 <li>리뷰게시판</li>
                 <li className='my'>예약현황</li>
@@ -41,7 +42,8 @@ const MpMain = () => {
                 <li><Link to={'/rvlist'}>내 예약 내역</Link></li>
                 <li><Link to={'/inquire'}>문의현황</Link></li>
                 <li><Link to={'/userDrop'}>회원탈퇴하기</Link></li>
-            </ul>
+            </ul> */}
+                <MpList />
         </section>
     )
 }
